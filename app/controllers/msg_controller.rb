@@ -18,6 +18,7 @@ class MsgController < ApplicationController
 ###########
 
   def load_msg
+    @display_bool = false
     @file_id = params[:file_id]
     file = Attachment.find(@file_id)
     @msg = Mapi::Msg.open(file.diskfile)

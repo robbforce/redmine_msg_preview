@@ -27,7 +27,7 @@ var Facebox = Class.create({
       // FIXME this path is hardcoded for the knowledgebase plugin. The logic should actually
       // be cleaned up if this functionality (facebox) is wanted in other plugins or 
       // redmine in general      
-      close_image   : '/plugin_assets/redmine_knowledgebase/images/facebox/closelabel.gif',      
+      close_image   : '/redmine/plugin_assets/redmine_msg_preview/images/facebox/closelabel.gif',      
       inited        : true, 
       facebox_html  : '\
     <div id="facebox" style="display:none;"> \
@@ -44,7 +44,7 @@ var Facebox = Class.create({
                 </div> \
                 <div class="footer"> \
                   <a href="#" class="close"> \
-                    <img src="/plugin_assets/redmine_knowledgebase/images/facebox/closelabel.gif" title="close" class="close_image" /> \
+                    <img src="/redmine/plugin_assets/redmine_msg_preview/images/facebox/closelabel.gif" title="close" class="close_image" /> \
                   </a> \
                 </div> \
               </td> \

@@ -4,6 +4,14 @@
 <% end %>
 
 <% if @issue.attachments.length > 0 %>
+  <% @issue.attachments.each do |att| %>
+    <% if att.content_type == "application/octet-stream" %>
+      <% @display_bool = true %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @display_bool == true %>
 <hr />
 <p><strong>Attached Outlook Messages</strong></p>
 	<div class="autoscroll">
@@ -30,4 +38,3 @@
   </table>
   </div>
 <% end %>
-
